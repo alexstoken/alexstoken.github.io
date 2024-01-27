@@ -8,13 +8,15 @@
     <meta name="author" content="Alex Stoken">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <script src="main.js"></script>
 </head>
 <body>
     <div style="display: block;">
         <h1 style="display: inline; float:left">Alex Stoken</h1>
         <span class="topnav">
             <a href="#projects">Projects</a>
-            <a href="#talks">Talks</a>
+            <!-- <a href="#talks">Talks</a> -->
             <a href="#community">Community</a>
             <a href="#personal">Personal</a>
         </span>
@@ -76,7 +78,18 @@
                   </p>
             </td>
         </tr> -->
-    <h3 id="publications">Publications</h3>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'Publications')">Publications</button>
+        <button class="tablinks" onclick="openTab(event, 'Grants')">Grants</button>
+        <button class="tablinks" onclick="openTab(event, 'Software')">Software</button>
+        <button class="tablinks" onclick="openTab(event, 'Writing')">Writing</button>
+        <button class="tablinks" onclick="openTab(event, 'Talks')">Talks</button>
+
+
+    </div>
+    <!-- <h3 id="publications">Publications</h3> -->
+    <div id="Publications" class="tabcontent" style="display: block;">
     <table>
         <tr>
             <td>
@@ -85,22 +98,22 @@
             <td class="paper-info">
                 <a href="https://openaccess.thecvf.com/content/CVPR2023W/IMW/papers/Stoken_Find_My_Astronaut_Photo_Automated_Localization_and_Georectification_of_Astronaut_CVPRW_2023_paper.pdf">
                     <span class="papertitle">Find My Astronaut Photo</span>
-                  </a>
-                  <br>
-                  <strong>Alex Stoken</strong>,
-                  <a href="https://ares.jsc.nasa.gov/people/bios/kenton-r-fisher/">Kent Fisher</a>
-                  <br>
-                  <a href="https://image-matching-workshop.github.io/cvpr2023/"><em>CVPR Image Matching Workshop</em></a>, 2023
-                  <br>
-                  <a href="https://ntrs.nasa.gov/api/citations/20230008964/downloads/cvpr_find_my_talk_final%20(1).pdf">slides</a>
-                  /
-                  <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
-                  /
-                  <a href="https://www.youtube.com/watch?v=9JpGjpITiDM&t=8241s">talk</a>
-                  <p></p>
-                  <p>
-                  tldr text
-                  </p>
+                </a>
+                <br>
+                <strong>Alex Stoken</strong>,
+                <a href="https://ares.jsc.nasa.gov/people/bios/kenton-r-fisher/">Kent Fisher</a>
+                <br>
+                <a href="https://image-matching-workshop.github.io/cvpr2023/"><em>CVPR Image Matching Workshop</em></a>, 2023
+                <br>
+                <a href="https://ntrs.nasa.gov/api/citations/20230008964/downloads/cvpr_find_my_talk_final%20(1).pdf">slides</a>
+                /
+                <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+                /
+                <a href="https://www.youtube.com/watch?v=9JpGjpITiDM&t=8241s">talk</a>
+                <p></p>
+                <p>
+                Geolocate astronaut photography of Earth via pairwise matching with reference satellite imagery.
+                </p>
             </td>
         </tr>
         <tr>
@@ -110,23 +123,23 @@
             <td class="paper-info">
                 <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/2663.pdf">
                     <span class="papertitle">Automated Boulder Counting</span>
-                  </a>
-                  <br>
-                  <strong>Alex Stoken</strong>,
-                  <a href="https://ares.jsc.nasa.gov/people/bios/andrew-w-britton/">Andrew Britton</a>,
-                  <a href="">Amber Turner</a>,
-                  <a href="https://ares.jsc.nasa.gov/people/bios/minna-a-rubio/">Minna Rubio</a>,
-                  <a href="https://ares.jsc.nasa.gov/people/bios/mark-d-lambert/">Mark Lambert</a>
-                  <br>
-                  <a href="https://www.hou.usra.edu/meetings/lpsc2023/"><em>Lunar and Planetary Science Conference</em></a>, 2023
-                  <br>
-                  <a>project page</a>
-                  /
-                  <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
-                  <p></p>
-                  <p>
-                  tldr text
-                  </p>
+                </a>
+                <br>
+                <strong>Alex Stoken</strong>,
+                <a href="https://ares.jsc.nasa.gov/people/bios/andrew-w-britton/">Andrew Britton</a>,
+                <a href="">Amber Turner</a>,
+                <a href="https://ares.jsc.nasa.gov/people/bios/minna-a-rubio/">Minna Rubio</a>,
+                <a href="https://ares.jsc.nasa.gov/people/bios/mark-d-lambert/">Mark Lambert</a>
+                <br>
+                <a href="https://www.hou.usra.edu/meetings/lpsc2023/"><em>Lunar and Planetary Science Conference</em></a>, 2023
+                <br>
+                <a>project page</a>
+                /
+                <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+                <p></p>
+                <p>
+                Search for bounder+shadow to identify small boulders in low solar incidence angle regions (like the lunar South Pole!)
+                </p>
             </td>
         </tr>
         <tr>
@@ -134,7 +147,7 @@
                 <img src="assets/dexv2a_preview.png" class="project_preview" alt="">
             </td>
             <td class="paper-info">
-                <a href="https://repository.arizona.edu/handle/10150/632845">
+                <a href="https://repositories.lib.utexas.edu/items/cac633c2-186a-4178-a388-a4d0aa3719bb">
                     <span class="papertitle">
                         [Masters Thesis] DexV2A: Vision Pretraining for Dexterous Manipulation
                     </span>
@@ -147,7 +160,7 @@
                   <em>The University of Texas at Austin Department of Computer Science</em>, 2022
                   <br>
                   <p>
-                  tldr text
+                  Pretraining a CNN on low level, structural vision tasks (edge detection, depth estimation) provides benefitial initialization for task-based policy learning.
                   </p>
             </td>
         </tr>
@@ -168,12 +181,15 @@
                   <em>The University of Arizona Department of Physics</em>, 2019
                   <br>
                   <p>
-                  tldr text
+                  Finding optimal cuts to seperate signal from background in the 4top-quark search at the ATLAS experiment.
                   </p>
             </td>
         </tr>
     </table>
-    <h3 id="grants">Grants</h3>
+    </div>
+
+    <!-- <h3 id="grants">Grants</h3> -->
+    <div id="Grants" class="tabcontent">
     <table>
         <tr>
             <td>
@@ -199,7 +215,7 @@
                   <!-- <em>NASA JSC Center Innovation Fund Technology Showcase</em>, 2022-2023 -->
                   <br>
                   <p>
-                  tldr text
+                  Detect and track objects in and around the ISS to enhance operations and mission analysis. Built with very little training data.
                   </p>
             </td>
         </tr>
@@ -227,7 +243,7 @@
                   <!-- <em>NASA JSC Center Innovation Fund Technology Showcase</em>, 2022 -->
                   <br>
                   <p>
-                  tldr text
+                  Detect spacesuit joints for downstream pose analysis in NBL and EVA situations. Trained on simulated data only.
                   </p>
             </td>
         </tr>
@@ -255,7 +271,9 @@
             </td>
         </tr>
     </table>
-    <h3>Software</h3>
+    </div>
+    <!-- <h3>Software</h3> -->
+    <div id="Software" class="tabcontent">
     <table>
         <tr>
             <td>
@@ -266,26 +284,62 @@
             </td>
         </tr>
     </table>
-
-    <h3>Writing</h3>
+    </div>
+    <!-- <h3>Writing</h3> -->
+    <div id="Writing" class="tabcontent">
     I have written <em>Image of the Day</em> articles on astronaut photography for <a href="https://earthobservatory.nasa.gov/">NASA Earth Observatory</a>.
     <!-- <h3>Articles</h3> -->
-    <table>
-        <tr>
-            <td>
-                <a href="https://earthobservatory.nasa.gov/images/146135/the-colorado-rockies">The Colorado Rockies</a>
+        <div class="row">
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/146135/the-colorado-rockies">The Colorado Rockies</a>
                 <br>
-                <img class="project_preview" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/146000/146135/iss061e032065.jpg" alt="The Colorado Rockies">
-            </td>
-            <td>
-                <a href="https://earthobservatory.nasa.gov/images/149682/watercolors-of-torrevieja">Watercolors of Torrevieja</a>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/146000/146135/iss061e032065.jpg" alt="The Colorado Rockies">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/149682/watercolors-of-torrevieja">Watercolors of Torrevieja</a>
                 <br>
-                <img class="project_preview" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149682/iss065e093005.jpg" alt="Watercolors of Torrevieja">
-        </td>
-        </tr>
-    </table>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149682/iss065e093005.jpg" alt="Watercolors of Torrevieja">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/146728/popcorn-clouds-over-rio-de-janeiro">Popcorn Clouds over Rio de Janeiro</a>
+                <br>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/146000/146728/iss062e113274.jpg" alt="Popcorn Clouds over Rio de Janeiro">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/149827/san-pedro-and-ambergris-cay">San Pedro and Ambergris Cay</a>
+                <br>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149827/iss063e076408.jpg" alt="San Pedro and Ambergris Cay">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/147296/cupola-over-the-caribbean">Cupola Over the Caribbean/a>
+                <br>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/147000/147296/iss062e117852.jpg" alt="Cupola Over the Caribbean">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/148817/a-meeting-of-ice-and-dunes">A Meeting of Ice and Dunes</a>
+                <br>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/148000/148817/iss065e023018.jpg" alt="A Meeting of Ice and Dunes">
+            </div>
 
-    <h2 id="talks">Talks</h2>
+            <div class="column">
+                <a class='eo_article_title' href="https://earthobservatory.nasa.gov/images/149546/flying-over-furneaux">Flying Over Furneaux/a>
+                <br>
+                <img class="eo_article" src="https://eoimages.gsfc.nasa.gov/images/imagerecords/149000/149546/iss066e077622.jpg" alt="Flying Over Furneaux">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="article_link">Article title</a>
+                <br>
+                <img class="eo_article" src="img_src" alt="article title">
+            </div>
+            <div class="column">
+                <a class='eo_article_title' href="article_link">Article title</a>
+                <br>
+                <img class="eo_article" src="img_src" alt="article title">
+            </div>
+        </div>
+    </div>
+    <div id="Talks" class="tabcontent">
+    <!-- <h2 id="talks">Talks</h2> -->
     <table>
         <thead>
             <tr>
@@ -310,6 +364,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
     <h2 id="community">Community</h2>
     <p>
         <a href="https://jsc-hack.github.io/">JSC Hackathon</a>, CVPR Reviewer, JEOG Group Lead, Yolov5 contributions
