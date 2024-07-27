@@ -83,6 +83,16 @@
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 14px;
   }
+
+  table{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  td {
+    height: 20px;
+    vertical-align: top;
+  }
   
   strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
