@@ -19,10 +19,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="assets/profile_circle.png">
 </head>
 <body>
-    <div style="display: block;">
-        <h1 style="display: inline; float:left">Alex Stoken</h1>
+    <div style="display: flex;">
+        <h1 style="display: inline; float:left; width:200px; margin-right:0px">Alex Stoken</h1>
         <span class="topnav">
             <a href="#projects">Projects</a>
             <!-- <a href="#talks">Talks</a> -->
@@ -30,14 +31,23 @@
             <a href="#personal">Personal</a>
         </span>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-        <img src="assets/profile.png" style="margin-right: 0; display:block ;height:200px" alt="Profile Picture">
+
+    <div id="header_and_bio" class="flex-container">
+        <div id="profile_pic">
+            <img src="assets/profile.png" style="margin-right: 0; display: block; height:200px" alt="Profile Picture">
+        </div>
+        <div id="bio_text">
+            I am a data scientist for Amentum working in NASA's <a href="https://ares.jsc.nasa.gov/image-science/esrs/">Earth Science and Remote Sensing Unit (ESRS)</a> at Johnson Space Center.
+            I specialize in machine learning and computer vision, with a focus on enhancing the <a href="https://eol.jsc.nasa.gov/">Gateway to Astronaut Photography of Earth</a> archive and automating <a href="https://ares.jsc.nasa.gov/image-science/isag/">image analysis</a> tasks on the ISS and for <a href="https://ares.jsc.nasa.gov/missions/Artemis/">lunar exploration</a>.
+            I enjoy collaborating on computer vision solutions to problems at JSC and across NASA. I'm currently one of the core the maintainers of <a href="https://github.com/alexstoken/image-matching-models"><i>Image Matching Modules</i></a>.
+            <p>
+            I have a Masters in Computer Science from UT Austin and bachelor's degrees in Physics, Math, and Economics from the University of Arizona.
+            </p>
+            <p>
+            </p>
+        </div>
     </div>
+
 
     <p style="text-align:left">
         <a href="mailto:alex.stoken@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -50,64 +60,57 @@
         <a href="https://github.com/alexstoken">Github</a>
     </p>
 
-    <p>
-    I am a data scientist for Jacobs working in NASA's <a href="https://ares.jsc.nasa.gov/image-science/esrs/">Earth Science and Remote Sensing Unit (ESRS)</a> at Johnson Space Center.
-    I specialize in machine learning and computer vision, with a focus on enhancing the <a href="https://eol.jsc.nasa.gov/">Gateway to Astronaut Photography of Earth</a> archive and automating <a href="https://ares.jsc.nasa.gov/image-science/isag/">image analysis</a> tasks on the ISS and for <a href="https://ares.jsc.nasa.gov/missions/Artemis/">lunar exploration</a>.
-    I enjoy collaborating on computer vision solutions to problems at JSC and across NASA. I'm currently one of the core the maintainers of <a href="https://github.com/alexstoken/image-matching-models"><i>Image Matching Modules</i></a>.
-    </p>
-    <p>
-    I have a Masters in Computer Science from UT Austin and bachelor's degrees in Physics, Math, and Economics from the University of Arizona.
-    </p>
-    <p>
-    </p>
+
     <!-- <h2>Research Interests</h2>
     <p>
     My primary research interests are in image matching and the downstream problems matching can help addresss: Structure from Motion, (V)SLAM, efficient image retreival.
     </p> -->
     <!-- <h2>News</h2> -->
-    <h2>Latest</h2>
-    <table>
-        <tbody>
-            <tr></tr>
-                <td><b>10/2024:</b></td>
-                <td><a href="https://github.com/alexstoken/image-matching-models"><i>Image Matching Modules</i> (IMM)</a> hits 250 stars on Github.
-            </tr>
-            <tr>
-                <td><b>08/2024:</b></td>
-                <td><a href="/assets/ISSRD24_ExplorePhotos_Pres.pdf">Presentation</a> at <a href="https://issconference.org/" >ISS Research and Development Conference</a> by group lead Kent Fisher about our Explore Photos project, where I was lead developer
-            </tr>
-            <tr>
-                <td><b>06/2024:</b></td>
-                <td>Attended CVPR 2024 with 1 main conference, 2 workshop papers.
-            </tr>
-            <tr>
-                <td><b>03/2024:</b></td>
-                <td>Released <a href="http://eol.jsc.nasa.gov/ExplorePhotos/">Explore Photos</a>, an interactive map for viewing astronaut photography.
-            </tr>
-            <tr>
-                <td><b>02/2024:</b></td>
-                <td>Awarded JETSII contract annual award for Continuous Improvement of ISS CEO Operations. 
-            </tr>
-            <tr>
-                <td><b>01/2024:</b></td>
-                <td>3 abstracts accepted to Lunar and Planetary Science Conference (LPSC) 2024.
-            </tr>
-            <tr>
-                <td><b>11/2023:</b></td>
-                <td>Talk at <a href="https://aihouston.rice.edu/international-workshop-ai-powered-space">The International Workshop on AI-Powered Space</a>.
-            </tr>
-            <tr>
-                <td><b>06/2022:</b></td>
-                <td><a href="https://www.nasa.gov/wp-content/uploads/2022/09/iss_benefits_for_humanity_2022_book.pdf#page=44">Article</a>
-                    in ISS Benefits for Humanity about our work applying computer vision to astronaut photography to benefit those on Earth.
-                </td>
-            </tr>
-            <tr>
-                <!-- <td>talk title</td>
-                <td>talk venue</td> -->
-            </tr>
-        </tbody>
-    </table>
+    <div id="latest">
+        <h2>Latest</h2>
+        <table>
+            <tbody>
+                <tr></tr>
+                    <td><b>10/2024:</b></td>
+                    <td><a href="https://github.com/alexstoken/image-matching-models"><i>Image Matching Modules</i> (IMM)</a> hits 250 stars on Github.
+                </tr>
+                <tr>
+                    <td><b>08/2024:</b></td>
+                    <td><a href="/assets/ISSRD24_ExplorePhotos_Pres.pdf">Presentation</a> at <a href="https://issconference.org/" >ISS Research and Development Conference</a> by group lead Kent Fisher about our Explore Photos project, where I was lead developer
+                </tr>
+                <tr>
+                    <td><b>06/2024:</b></td>
+                    <td>Attended CVPR 2024 with 1 main conference, 2 workshop papers.
+                </tr>
+                <tr>
+                    <td><b>03/2024:</b></td>
+                    <td>Released <a href="http://eol.jsc.nasa.gov/ExplorePhotos/">Explore Photos</a>, an interactive map for viewing astronaut photography.
+                </tr>
+                <tr>
+                    <td><b>02/2024:</b></td>
+                    <td>Awarded JETSII contract annual award for Continuous Improvement of ISS CEO Operations. 
+                </tr>
+                <tr>
+                    <td><b>01/2024:</b></td>
+                    <td>3 abstracts accepted to Lunar and Planetary Science Conference (LPSC) 2024.
+                </tr>
+                <tr>
+                    <td><b>11/2023:</b></td>
+                    <td>Talk at <a href="https://aihouston.rice.edu/international-workshop-ai-powered-space">The International Workshop on AI-Powered Space</a>.
+                </tr>
+                <tr>
+                    <td><b>06/2022:</b></td>
+                    <td><a href="https://www.nasa.gov/wp-content/uploads/2022/09/iss_benefits_for_humanity_2022_book.pdf#page=44">Article</a>
+                        in ISS Benefits for Humanity about our work applying computer vision to astronaut photography to benefit those on Earth.
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td>talk title</td>
+                    <td>talk venue</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 id="projects">Projects</h2>
         <!-- <tr>
