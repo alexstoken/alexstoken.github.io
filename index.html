@@ -133,17 +133,49 @@
         </tr> -->
 
     <div class="tab">
-        <button class="tablinks active" onclick="openTab(event, 'Publications')">Publications</button>
-        <button class="tablinks" onclick="openTab(event, 'Grants')">Grants</button>
-        <button class="tablinks" onclick="openTab(event, 'Software')">Software</button>
-        <button class="tablinks" onclick="openTab(event, 'Writing')">Writing</button>
-        <button class="tablinks" onclick="openTab(event, 'Talks')">Talks</button>
+        <button class="tablinks active" id='publications_button' onclick="openTab('Publications')">Publications</button>
+        <button class="tablinks" id='grants_button' onclick="openTab('Grants')">Grants</button>
+        <button class="tablinks" id='software_button' onclick="openTab('Software')">Software</button>
+        <button class="tablinks" id='writing_button' onclick="openTab( 'Writing')">Writing</button>
+        <button class="tablinks" id='talks_button' onclick="openTab( 'Talks')">Talks</button>
 
 
     </div>
     <!-- <h3 id="publications">Publications</h3> -->
     <div id="Publications" class="tabcontent" style="display: block;">
     <table>
+        <tr>
+            <td>
+                <img src="assets/earthloc_preview.png" class="project_preview" alt="">
+            </td>
+            <td class="paper-info">
+                <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Berton_EarthLoc_Astronaut_Photography_Localization_by_Indexing_Earth_from_Space_CVPR_2024_paper.html">
+                    <span class="papertitle">EarthLoc: Astronaut Photography Localization bt Indexing Earth from Space</span>
+                </a>
+                <br>
+                <a href="https://gmberton.github.io/">Gabriele Berton</a>,
+                <strong>Alex Stoken</strong>, 
+                <a href="https://vandal.polito.it/index.php/people/barbaracaputo/">Barbara Caputo</a>,
+                <a href="https://cmas1.github.io/">Carlo Masone</a>
+
+                <br>
+                <a href="https://cvpr.thecvf.com/Conferences/2024"><em>CVPR</em></a>, 2024
+                <br>
+                <!-- <a href="https://ntrs.nasa.gov/api/citations/20230008964/downloads/cvpr_find_my_talk_final%20(1).pdf">slides</a> -->
+                <!-- / -->
+                <a href="https://earthloc-and-earthmatch.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2403.06758">arXiv</a>
+                /
+                <a href="https://github.com/gmberton/EarthLoc">code</a>
+                <!-- <a href="https://www.youtube.com/watch?v=9JpGjpITiDM&t=8241s">talk</a> -->
+                <p></p>
+                <p>
+                Retreival based approach to astronaut photography localization. 
+                </p>
+            </td>
+        </tr>
+
         <tr>
             <td>
                 <img src="assets/nightref_preview.png" class="project_preview" alt="">
@@ -175,7 +207,7 @@
                 <img src="assets/earthmatch_teaser.png" class="project_preview" alt="">
             </td>
             <td class="paper-info">
-                <a href="https://arxiv.org/abs/2405.05422">
+                <a href="https://openaccess.thecvf.com/content/CVPR2024W/IMW/html/Berton_EarthMatch_Iterative_Coregistration_for_Fine-grained_Localization_of_Astronaut_Photography_CVPRW_2024_paper.html">
                     <span class="papertitle">
                         EarthMatch: Iterative Coregistration for Fine-grained Localization of Astronaut Photography
                     </span>
@@ -202,37 +234,6 @@
         </tr>
         <tr>
             <td>
-                <img src="assets/earthloc_preview.png" class="project_preview" alt="">
-            </td>
-            <td class="paper-info">
-                <a href="https://openaccess.thecvf.com/content/CVPR2023W/IMW/papers/Stoken_Find_My_Astronaut_Photo_Automated_Localization_and_Georectification_of_Astronaut_CVPRW_2023_paper.pdf">
-                    <span class="papertitle">EarthLoc: Astronaut Photography Localization bt Indexing Earth from Space</span>
-                </a>
-                <br>
-                <a href="https://gmberton.github.io/">Gabriele Berton</a>,
-                <strong>Alex Stoken</strong>, 
-                <a href="https://vandal.polito.it/index.php/people/barbaracaputo/">Barbara Caputo</a>,
-                <a href="https://cmas1.github.io/">Carlo Masone</a>
-
-                <br>
-                <a href="https://cvpr.thecvf.com/"><em>CVPR</em></a>, 2024
-                <br>
-                <!-- <a href="https://ntrs.nasa.gov/api/citations/20230008964/downloads/cvpr_find_my_talk_final%20(1).pdf">slides</a> -->
-                <!-- / -->
-                <a href="https://earthloc-and-earthmatch.github.io/">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2403.06758">arXiv</a>
-                /
-                <a href="https://github.com/gmberton/EarthLoc">code</a>
-                <!-- <a href="https://www.youtube.com/watch?v=9JpGjpITiDM&t=8241s">talk</a> -->
-                <p></p>
-                <p>
-                Retreival based approach to astronaut photography localization. 
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
                 <img src="assets/nac2tri_preview.png" class="project_preview" alt="">
             </td>
             <td class="paper-info">
@@ -248,7 +249,7 @@
                   <br>
                   <a href="https://www.hou.usra.edu/meetings/lpsc2024/"><em>Lunar and Planetary Science Conference</em></a>, 2024
                   <br>
-                  <a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/2157.pdf">abstract</a>
+                  <a href="https://www.hou.usra.edu/meetings/lpsc2024/pdf/2157.pdf">pdf</a>
 
                   <p>
                   Learn pixel-wise terrain roughness directly from image data - no DEM needed! 
@@ -299,7 +300,7 @@
                 <br>
                 <a href="https://www.hou.usra.edu/meetings/lpsc2023/"><em>Lunar and Planetary Science Conference</em></a>, 2023
                 <br>
-                <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/2663.pdf">abstract</a>
+                <a href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/2663.pdf">pdf</a>
                 <p></p>
                 <p>
                 Search for bounder+shadow to identify small boulders in low solar incidence angle regions (like the lunar South Pole!)
@@ -360,7 +361,7 @@
                 <img src="assets/nods_preview.png" class="project_preview" alt="">
             </td>
             <td class="paper-info">
-                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_YvueoAAAAJ&citation_for_view=b_YvueoAAAAJ:d1gkVwhDpl0C">
+                <a href="https://techport.nasa.gov/projects/117410">
                     <span class="papertitle">
                         NODS (NASA Object Detection System)
                     </span>
@@ -370,10 +371,10 @@
                   <a href="https://ares.jsc.nasa.gov/people/bios/mark-d-lambert/">Mark Lambert</a>,
                   <strong>Alex Stoken</strong>,
                   <a href="https://ieeexplore.ieee.org/author/37088884692">Peter Ilhardt</a>,
-                  <a href="">David Mackenzie</a>,
-                  <a href="">Kris Field</a>,
-                  <a href="">Will Watson</a>,
-                  <a href="">Jordan Lindsay</a>
+                  David Mackenzie,
+                  Kris Field,
+                  Will Watson,
+                  Jordan Lindsay
                   <br>
                   <em>NASA JSC Internal Research and Development (IRAD) Program</em>, 2022-2023
                   <!-- <em>NASA JSC Center Innovation Fund Technology Showcase</em>, 2022-2023 -->
@@ -394,13 +395,13 @@
                     </span>
                   </a>
                   <br>
-                  <a href="">Sudhakar Rajulu</a>,
-                  <a href="">Han Kim</a>,
+                  Sudhakar Rajulu,
+                  Han Kim,
                   <a href="https://ares.jsc.nasa.gov/people/bios/kenton-r-fisher/">Kent Fisher</a>,
-                  <a href="">Linh Vu</a>,
+                  Linh Vu,
                   <strong>Alex Stoken</strong>,
                   <a href="https://ares.jsc.nasa.gov/people/bios/mark-d-lambert/">Mark Lambert</a>,
-                  <a href="">Joseph Yao</a>
+                  Joseph Yao
                   <br>
                   <em>NASA JSC Internal Research and Development (IRAD) Program</em>, 2022
 
@@ -449,9 +450,9 @@
                 </a>
                 <br>
                 <strong>Alex Stoken</strong>,
-                <a href="">Cody Boyer</a>
+                <a href="https://www.linkedin.com/in/cody-boyer-89a9341b6/">Cody Boyer</a>
                 <br>
-                <a href="assets/ISSRD24_ExplorePhotos_Pres.pdf">project presentation</a>
+                <a href="assets/ISSRD24_ExplorePhotos_Pres.pdf">presentation</a>
                 <p></p>
                 <p>
                 See the world through the lens of an astronaut inside the International Space Station! Explore, view, and interact with georeferenced astronaut photgraphy.
@@ -463,7 +464,7 @@
                 <img src="assets/imm.png" class="project_preview" alt="">
             </td>
             <td class="paper-info">
-                <a href="https://github.com/gmberton/image-matching-models">
+                <a href="https://github.com/alexstoken/image-matching-models>
                     <span class="papertitle">Image Matching Models</span>
                 </a>
                 <br>
@@ -488,10 +489,10 @@
                     </span>
                   </a>
                   <br>
-                  <a href="https://ares.jsc.nasa.gov/people/bios/minna-a-rubio/">Minna Rubio</a>,
+                  <a href="https://www.linkedin.com/in/minnaadelrubio/">Minna Rubio</a>,
                   <a href="https://ieeexplore.ieee.org/author/37088884692">Peter Ilhardt</a>,
                   <strong>Alex Stoken</strong>,
-                  <a href="coauthor_page">Sarah Walton</a>,
+                  <a href="https://www.linkedin.com/in/sarah-walton-2184001ba/">Sarah Walton</a>,
                   <a href="https://ares.jsc.nasa.gov/people/bios/samuel-j-lawrence/">Samuel Lawrence</a>,
                   <br>
                   <a href="https://www.hou.usra.edu/meetings/lpsc2024/"><em>Lunar and Planetary Science Conference</em></a>, 2024
@@ -512,7 +513,7 @@
                     </span>
                   </a>
                   <br>
-                  <a href="coauthor_page">Chandler Lawson</a>,
+                  <a href="https://scholar.google.com/citations?user=yNHBVygAAAAJ&hl=en">Chandler Lawson</a>,
                   <a href="https://ieeexplore.ieee.org/author/37088884692">Peter Ilhardt</a>,
                   <strong>Alex Stoken</strong>,
                   <a href="https://ares.jsc.nasa.gov/people/bios/michael-e-evans/">Michael Evans</a>
@@ -625,7 +626,7 @@
     </p>
     <h2 id="personal">Personal</h2>
     <p>
-        I am an avid runner and recently completed my third marathon in Austin in February 2024. I'm tracking my <a href="https://strafo.app/athletes/76412896">PR evolution</a> with <a href="https://strafo.app/">stratfo.</a>
+        I am an avid runner and am currently training for my fourth marathon in Houston in January 2025. I'm tracking my <a href="https://strafo.app/athletes/76412896">PR evolution</a> with <a href="https://strafo.app/">stratfo.</a>
     <p></p>
         I enjoy playing and watching sports, particularly soccer, volleyball, football, and basketball. I have a rooting interest in Arizona and Chicago based teams.
     </p>
