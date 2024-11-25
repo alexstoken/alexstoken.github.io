@@ -177,14 +177,17 @@
     vertical-align: baseline;
     padding-top: 30px;
     padding-bottom: 10px;
+    margin-left: 0;
+    padding-left: 10px;
+    text-align:left;
   }
 
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     color: rgb(0, 0, 0);
-    text-align: right;
-    padding-left: 20px;
+    text-align: left;
+    padding-right: 20px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -271,3 +274,25 @@
     padding: 5px;
   } */
 
+  #profile_pic{
+    height: 200px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  #bio_text{
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 600px;
+  }
+
+  #header_and_bio{
+    display: flex;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  #latest{
+    max-width: 750px;
+  }
